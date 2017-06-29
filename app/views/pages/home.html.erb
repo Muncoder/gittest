@@ -1,0 +1,14 @@
+<h1>Checking User is visited or not</h1>
+
+<% if @is_user_visited != 'visited_user' %>
+	<h2>Fist time user</h2>
+	<%= #show the page %>
+<% else %>
+	<%= #take them to home page %>
+	<h1>You already visited before</h1>
+	<%= @is_user_visited %>
+<% end %>
+
+
+
+<%= link_to "Delete Cookies", delete_cookies_path, class: "btn btn-default" %>
